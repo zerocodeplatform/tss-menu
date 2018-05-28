@@ -7,8 +7,7 @@ export class ServicesService {
 
   constructor() { }
   obj={
-    "name":"Mahesh",
-    "":""
+    "name":"Mahesh"
   }
   test(){
     return true;

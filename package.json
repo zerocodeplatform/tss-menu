@@ -11,10 +11,10 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^6.0.2",
+    "@angular/animations": "^6.0.3",
     "@angular/common": "^6.0.2",
     "@angular/compiler": "^6.0.2",
-    "@angular/core": "^6.0.2",
+    "@angular/core": "^6.0.3",
     "@angular/elements": "^6.0.3",
     "@angular/forms": "^6.0.2",
     "@angular/http": "^6.0.2",
@@ -22,11 +22,15 @@
     "@angular/platform-browser-dynamic": "^6.0.2",
     "@angular/router": "^6.0.2",
     "core-js": "^2.5.4",
+    "document-register-element": "^1.7.2",
+    "font-awesome": "^4.7.0",
+    "g": "^2.0.1",
+    "primeng": "^6.0.0-alpha.1",
     "rxjs": "^6.0.0",
+    "tss-img-lib": "^0.1.0",
     "tsslogin": "0.0.2",
     "tssmenu-lib": "0.0.1-beta.1",
-    "zone.js": "^0.8.26",
-    "document-register-element": "^1.7.2"
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.2",

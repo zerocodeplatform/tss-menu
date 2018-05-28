@@ -1,19 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MenuLibService } from './menu-lib.service';
+import {MenuItem} from 'primeng/api';
+import { menuPropertiesService } from '../menu-interface';
 
 @Component({
   selector: 'lib-menu-lib',
-  template: `
-    <p>
-      menu-lib works!
-    </p>
-  `,
+  templateUrl: './menu-lib.component.html',
   styles: []
 })
 export class MenuLibComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Input() options: menuPropertiesService;
+    
+  constructor(private serv : MenuLibService) { }
+  private item: any
+  ngOnInit() { }
 
 }
