@@ -1,13 +1,18 @@
 ## Use "npm i tssmenu-lib" to install this menu.
 
 After installing import the below modules.
+
 ###  import { MenubarModule } from 'primeng/menubar';
 ###  import { ImgLibModule } from 'tss-img-lib';
 
-Use this selector in html:#  `<lib-menu-lib [options]="options"></lib-menu-lib>`
+Use this selector in html:#  
+```
+  <lib-menu-lib [options]="options"></lib-menu-lib>
+
+```
 
 variable "options" consists of : "items" and "styling".
-
+```
 "styling": 'horizontal/vertical',
 "items" : [
         {
@@ -60,4 +65,4 @@ variable "options" consists of : "items" and "styling".
             ]
         }        
     ]
-
+```
