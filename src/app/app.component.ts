@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MenuItem} from 'primeng/api';
+import { MenuInterface } from 'projects/menu-lib/src/menu-interface';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,11 @@ import {MenuItem} from 'primeng/api';
 })
 export class AppComponent {
   title = 'Menu';
-  options : any;
+  options : MenuInterface;
   constructor(){
     this.options = {
-      "styling": 'vertical',
-      "items" : [
+      styling: 'vertical',
+      items : [
         {
             label: 'File',
             icon: 'fa-file-o',

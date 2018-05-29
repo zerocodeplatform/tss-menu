@@ -4,15 +4,12 @@ import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MenuLibModule } from 'projects/menu-lib/src/public_api';
-import { TieredMenuModule } from 'primeng/tieredmenu';
-import { MenubarModule } from 'primeng/menubar';
-import { ImgLibModule } from 'tss-img-lib';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule,MenuLibModule, TieredMenuModule, MenubarModule, ImgLibModule
+    BrowserModule, BrowserAnimationsModule,MenuLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
