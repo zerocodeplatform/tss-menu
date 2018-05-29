@@ -1,27 +1,68 @@
-# Menu
+## Use "npm i tssmenu-lib" to install this menu.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+After installing import the below modules.
 
-## Development server
+###  import { MenubarModule } from 'primeng/menubar';
+###  import { ImgLibModule } from 'tss-img-lib';
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Use this selector in html:#  
+```
+  <lib-menu-lib [options]="options"></lib-menu-lib>
 
-## Code scaffolding
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+variable "options" consists of : "items" and "styling".
+```
+"styling": 'horizontal/vertical',
+"items" : [
+        {
+            label: 'File',
+            icon: 'fa-file-o',
+            items: [{
+                    label: 'New', 
+                    icon: 'fa-plus',
+                    items: [
+                        {label: 'Project'},
+                        {label: 'Other'},
+                    ]
+                },
+                {label: 'Open'},
+                {separator:true},
+                {label: 'Quit'}
+            ]
+        },
+        {
+            label: 'Edit',
+            icon: 'fa-edit',
+            items: [
+                {label: 'Undo', icon: 'fa-mail-forward'},
+                {label: 'Redo', icon: 'fa-mail-reply'}
+            ]
+        },
+        {
+            label: 'Help',
+            icon: 'fa-question',
+            items: [
+                {
+                    label: 'Contents'
+                },
+                {
+                    label: 'Search', 
+                    icon: 'fa-search', 
+                    items: [
+                        {
+                            label: 'Text', 
+                            items: [
+                                {
+                                    label: 'Workspace'
+                                }
+                            ]
+                        },
+                        {
+                            label: 'File'
+                        }
+                ]}
+            ]
+        }        
+    ]
+```
