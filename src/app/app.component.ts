@@ -11,8 +11,8 @@ export class AppComponent {
   options : any;
   constructor(){
     this.options = {
-      "styling": 'horizontal',
-      "item" : [
+      "styling": 'vertical',
+      "items" : [
         {
             label: 'File',
             icon: 'fa-file-o',

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MenuLibService } from './menu-lib.service';
 import {MenuItem} from 'primeng/api';
-import { menuPropertiesService } from '../menu-interface';
+import { MenuInterface } from '../menu-interface';
 
 @Component({
   selector: 'lib-menu-lib',
@@ -10,10 +10,11 @@ import { menuPropertiesService } from '../menu-interface';
 })
 export class MenuLibComponent implements OnInit {
 
-  @Input() options: menuPropertiesService;
-    
+  @Input() options: MenuInterface;
   constructor(private serv : MenuLibService) { }
-  private item: any
-  ngOnInit() { }
+  
+  ngOnInit() { 
+    console.log(this.options)
+  }
 
 }

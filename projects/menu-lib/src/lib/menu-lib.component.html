@@ -1,2 +1,3 @@
 
-<p-tieredMenu [model]="options.item"></p-tieredMenu>
+<p-tieredMenu *ngIf='options.styling && options.styling=="vertical"' [model]="options.items"></p-tieredMenu>
+<p-menubar *ngIf='options.styling && options.styling=="horizontal"' [model]="options.items"></p-menubar>
